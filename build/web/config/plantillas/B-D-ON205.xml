@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<promocion>
+    <verificar>
+        
+    </verificar>
+    <!-- botellas -->    
+    <promo_botellas>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>in ('cerveza','jarra','p2Rfres')</clase> 
+        <id>botella</id>            
+    </promo_botellas>
+    <botella id="WHI-BN104">
+        <id>TEQ-BN190</id>
+        <nombre>CUERVO ESPECIAL</nombre>
+    </botella>
+    <botella id="VOD-BN70">
+        <id>VOD-BN70</id>
+        <nombre>Skky Vodka</nombre>
+    </botella>
+    <botella id="RON-BN74">
+        <id>RON-BN74</id>
+        <nombre>Capitan Morgan </nombre>
+    </botella>
+    <botella id="RON-BN90">
+        <id>RON-BN90</id>
+        <nombre>Bot Appleton State</nombre>
+    </botella>
+    
+    
+    <!-- fin botellas -->  
+    <!-- inicio 15 pz cervezas -->
+    <cervezas>
+        <estado>desc</estado>
+        <limite>10</limite>
+        <clase>in ('botella','jarra','p2Rfres')</clase>  
+        <id>cerveza</id> 
+    </cervezas> 
+    
+    <cerveza id="CHE-ON98">
+        <id>CHE-ON98</id>
+        <nombre>Indio</nombre>
+    </cerveza> 
+    
+    
+    <promo_jarra>
+        <estado>Activo</estado>
+        <limite>3</limite>
+        <clase>in ('p2Rfres','botella','cerveza')</clase>
+        <limite_refre>1</limite_refre> <!-- No funcion> --> 
+        <id>jarra</id>  
+       
+    </promo_jarra>
+    <promo_refrsp2>
+        <estado>desc</estado>
+        <limite>16</limite>
+        <clase>in ('cerveza','jarra','botella')</clase>      
+        <id>p2Rfres</id>
+    </promo_refrsp2>
+    
+    <promo_hene>
+        <estado>des</estado>
+        <limite>16</limite>
+        <clase>in ('cerveza','botella')</clase>      
+        <id>henne</id>
+    </promo_hene>
+   
+    <comida_config>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>np</clase>
+        <id>comida</id>   
+        
+    </comida_config>
+    <comida>
+        <id>REF-ON33</id>
+        <nombre>Coca</nombre>
+        
+    </comida>
+    <promo_refrescos>
+        <estado>Activo</estado>
+        <limite>4</limite>
+        <clase>in ('jugos')</clase>
+        <limite_jugos>2</limite_jugos> <!-- No funcion> -->  
+        <id>refrescos</id>  
+       
+    </promo_refrescos>
+    <refresco>
+        <id>REF-ON33</id>
+        <nombre>Coca</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON34</id>
+        <nombre>Coca Light</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON35</id>
+        <nombre>Zup</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON36</id>
+        <nombre>Squirt</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON37</id>
+        <nombre>Manzana</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON38</id>
+        <nombre>Quina</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON39</id>
+        <nombre>Soda</nombre>
+        
+    </refresco>
+	
+    
+    <promo_jugo>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>in ('refrescos')</clase>
+        <limite_refre>1</limite_refre> <!-- No funcion> --> 
+        <id>jugos</id>  
+       
+    </promo_jugo>
+    <jugo>
+        <id>JUG-ON48</id>
+        <nombre>Jarra de NARANJA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON46</id>
+        <nombre> Jarra de PIÑA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON45</id>
+        <nombre>Jarra de ARANDANO</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON47</id>
+        <nombre>Jarra de UVA</nombre>
+        
+    </jugo>
+	
+    <promo_perla>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>np</clase>
+        <id>perla</id>  
+    </promo_perla>
+    <perla>
+        <id>CHA-BN208</id>
+       <nombre>Bot Burbujas</nombre>
+        
+    </perla>
+    <promo_laborguini>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>np</clase>
+        <id>labor</id>  
+    </promo_laborguini>
+    <laborguini>
+        <id>EXT-ON207</id>
+        <nombre>Laborghini Blue Fire</nombre>
+        
+    </laborguini>
+   
+    
+   
+    
+ 
+    
+</promocion>

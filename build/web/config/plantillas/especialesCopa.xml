@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<promocion>
+    <verificar>
+        
+    </verificar>
+    <!-- botellas -->    
+    <promo_botellas>
+        <estado>dec</estado>
+        <limite>1</limite>
+        <clase>in ('cerveza','jarra','p2Rfres')</clase> 
+        <id>botella</id>            
+    </promo_botellas>
+    <!-- fin botellas -->  
+    <!-- inicio 15 pz cervezas -->
+    <cervezas>
+        <estado>dec</estado>
+        <limite>15</limite>
+        <clase>in ('botella','jarra','p2Rfres')</clase>  
+        <id>cerveza</id> 
+    </cervezas>  
+    
+    <promo_jarra>
+        <estado>desc</estado>
+        <limite>3</limite>
+        <clase>in ('p2Rfres','botella','cerveza')</clase>
+        <limite_refre>1</limite_refre> <!-- No funcion> --> 
+        <id>jarra</id>  
+       
+    </promo_jarra>
+    <promo_refrsp2>
+        <estado>desc</estado>
+        <limite>16</limite>
+        <clase>in ('cerveza','jarra','botella')</clase>      
+        <id>p2Rfres</id>
+    </promo_refrsp2>
+    
+    <promo_hene>
+        <estado>des</estado>
+        <limite>16</limite>
+        <clase>in ('cerveza','botella')</clase>      
+        <id>henne</id>
+    </promo_hene>
+   
+    <comida_config>
+        <estado>desc</estado>
+        <limite>1</limite>
+        <clase>np</clase>
+        <id>comida</id>   
+        
+    </comida_config>
+    
+    <promo_refrescos>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>in ('jugos')</clase>
+        <limite_jugos>2</limite_jugos> <!-- No funcion> -->  
+        <id>refrescos</id>  
+       
+    </promo_refrescos>
+    <refresco>
+        <id>REF-ON33</id>
+        <nombre>Coca</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON34</id>
+        <nombre>Coca Light</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON35</id>
+        <nombre>Zup</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON36</id>
+        <nombre>Squirt</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON37</id>
+        <nombre>Manzana</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON38</id>
+        <nombre>Quina</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON39</id>
+        <nombre>Soda</nombre>
+        
+    </refresco>
+    
+	
+    
+    <promo_jugo>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>in ('refrescos')</clase>
+        <limite_refre>1</limite_refre> <!-- No funcion> --> 
+        <id>jugos</id>  
+       
+    </promo_jugo>
+    <jugo>
+        <id>JUG-ON43</id>
+        <nombre>Vaso NARANJA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON41</id>
+        <nombre>Vaso PIÑA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON40</id>
+        <nombre>Vaso ARANDANO</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>JUG-ON42</id>
+        <nombre>Vaso UVA</nombre>
+        
+    </jugo>
+   
+    <promo_perla>
+        <estado>des</estado>
+        <limite>10</limite>
+        <clase>np</clase>
+        <id>perla</id>  
+    </promo_perla>
+	<perla>
+        <id>COC-CN642</id>
+        <nombre>PERLA NEGRA</nombre>
+        
+    </perla>
+	<promo_laborguini>
+        <estado>des</estado>
+        <limite>10</limite>
+        <clase>np</clase>
+        <id>labor</id>  
+    </promo_laborguini>
+	<laborguini>
+        <id>SHO-OT394t</id>
+        <nombre>Laborghini Blue Fire</nombre>
+        
+    </laborguini>
+   
+    
+ 
+    
+</promocion>

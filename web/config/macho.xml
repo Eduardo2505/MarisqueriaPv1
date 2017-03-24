@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<promocion>
+    <verificar>
+        
+    </verificar>
+    <!-- botellas -->    
+    <promo_botellas>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>in ('cerveza')</clase> 
+        <id>botella</id>            
+    </promo_botellas>
+    
+    <botella>
+        <id>TEQ-BN118</id>
+        <nombre>Bot Cuervo Especial</nombre>
+    </botella>
+    <botella>
+        <id>RON-BN60</id>
+        <nombre>Bot Baraima Bco</nombre>
+    </botella>
+    <botella>
+        <id>RON-CN561</id>
+        <nombre>Copa baraima anejo</nombre>
+    </botella>
+     <botella>
+        <id>RON-BN660P</id>
+        <nombre>Bot Teachers</nombre>
+    </botella>
+    <botella>
+        <id>RON-CN658W</id>
+        <nombre>Old Smuggler</nombre>
+    </botella>
+    <botella>
+        <id>RON-BN57r</id>
+        <nombre>Bot Appleton White</nombre>
+    </botella>
+     <botella>
+        <id>RON-BN60t</id>
+        <nombre>Bot Appleton Special</nombre>
+    </botella>
+       <botella>
+        <id>PRO-BN588re</id>
+        <nombre>Bot Skyy</nombre>
+    </botella>
+       <botella>
+        <id>RON-BN321</id>
+        <nombre>Bot Bacardi Blanco</nombre>
+    </botella>
+       <botella>
+        <id>RON-BN35PRO</id>
+        <nombre>Bot Bacardi Anejo</nombre>
+    </botella>
+       <botella>
+        <id>RON-BN29fr</id>
+        <nombre>Bot Havana Silver</nombre>
+    </botella>
+       <botella>
+        <id>WHI-BN44h</id>
+        <nombre>Bot Willam Lawson</nombre>
+    </botella>
+       <botella>
+        <id>RON-BN655br</id>
+        <nombre>Bot Rockk</nombre>
+    </botella>
+       <botella>
+        <id>VOD-BN63x</id>
+        <nombre>Bot Smirnoff</nombre>
+    </botella>
+    
+    <!-- fin botellas -->  
+    <!-- inicio 15 pz cervezas -->
+    <cervezas>
+        <estado>Activo</estado>
+        <limite>15</limite>
+        <clase>in ('botella')</clase>  
+        <id>cerveza</id> 
+    </cervezas>  
+    <cerveza>
+        <id>CER-BN591</id>
+        <nombre>Sol</nombre>  
+    </cerveza>
+    <cerveza>
+        <id>CER-BN286</id>
+        <nombre>Indio</nombre>  
+    </cerveza>
+    <cerveza>
+        <id>CER-BN287</id>
+        <nombre>Tecate</nombre>  
+    </cerveza>
+    <cerveza>
+        <id>CER-BN287l</id>
+        <nombre>Tecate light</nombre>  
+    </cerveza>
+    
+    <!-- fin cervezas -->
+    
+    <!-- inicio comida -->
+    <comida_config>
+        <estado>Activo</estado>
+        <limite>1</limite>
+        <clase>np</clase>
+        <id>comida</id>   
+        
+    </comida_config>
+    <comida>
+        <id>ITA-ON716</id>
+        <nombre>ITACATE ALITAS</nombre> 
+        
+    </comida>
+    <comida>
+        <id>ITA-ON717</id>
+        <nombre>ITACATE CHICKEN TENDERS</nombre> 
+        
+    </comida>
+    <comida>
+        <id>ITA-ON717</id>
+        <nombre>ITACATE CHICKEN TENDERS</nombre> 
+        
+    </comida>
+    <comida>
+        <id>ITA-ON718</id>
+        <nombre>ITACATE FAJITAS DE ARRACHERA</nombre> 
+        
+    </comida>
+    <comida>
+        <id>ITA-ON719</id>
+        <nombre>ITACATE PESCADITOS MACERADOS</nombre> 
+        
+    </comida>
+    <comida>
+        <id>ITA-ON720</id>
+        <nombre>ITACATE COSTILLITAS BBQ</nombre> 
+        
+    </comida>
+     <comida>
+        <id>ITA-ON721</id>
+        <nombre>ITACATE COCHINITA PIBIL</nombre> 
+    </comida>
+    <comida>
+        <id>COC-ON533</id>
+        <nombre>Itacate pescaditos en tiras</nombre> 
+    </comida>
+    <comida>
+        <id>COC-ON530</id>
+        <nombre>itacate 1 kg fajitas de pollo</nombre> 
+    </comida>
+    
+    <!-- fin comida -->
+    
+    <!-- inicio refrescos -->
+    <promo_refrescos>
+         <estado>Activo</estado>
+         <limite>16</limite>
+         <clase>in ('jugos')</clase>
+         <limite_jugos>2</limite_jugos> <!-- No funcion> -->  
+         <id>refrescos</id>  
+       
+    </promo_refrescos>
+    <refresco>
+        <id>REF-BN428</id>
+        <nombre>Agua</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-BN627</id>
+        <nombre>Zepelin</nombre>
+        
+    </refresco>
+      <refresco>
+        <id>REF-BN627</id>
+        <nombre>Zepelin</nombre>
+        
+    </refresco>
+      <refresco>
+        <id>REF-ON363</id>
+        <nombre>Coca</nombre>
+        
+    </refresco>
+      <refresco>
+        <id>REF-ON364</id>
+        <nombre>Sprit</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON365</id>
+        <nombre>coca light</nombre>
+        
+    </refresco>
+      <refresco>
+        <id>REF-ON366</id>
+        <nombre>Manzana</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON390</id>
+        <nombre>ZUP</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON391</id>
+        <nombre>Ginger Ale</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON392</id>
+        <nombre>Mineral</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON393</id>
+        <nombre>Squiert</nombre>
+        
+    </refresco>
+    <refresco>
+        <id>REF-ON400</id>
+        <nombre>Quina</nombre>
+        
+    </refresco>
+    
+    
+    <!-- fin refrescos -->
+    
+    <promo_jugo>
+         <estado>Activo</estado>
+         <limite>3</limite>
+         <clase>in ('refrescos')</clase>
+         <limite_refre>1</limite_refre> <!-- No funcion> --> 
+         <id>jugos</id>  
+       
+    </promo_jugo>
+    <jugo>
+        <id>EXT-ON339</id>
+        <nombre>Jarra de NARANJA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>EXT-ON339F</id>
+        <nombre> Jarra de PIÑA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>EXT-ON339O</id>
+        <nombre>Jarra de ARANDANO</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>EXT-ON339T</id>
+        <nombre>Jarra de UVA</nombre>
+        
+    </jugo>
+    <jugo>
+        <id>EXT-ON339yh7</id>
+        <nombre>Jarras de LImonada</nombre>        
+    </jugo>
+   
+   
+    
+ 
+    
+</promocion>
