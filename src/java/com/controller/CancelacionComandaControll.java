@@ -111,15 +111,15 @@ public class CancelacionComandaControll extends HttpServlet {
 
                     }
                 }
-                List resax = dac.getMostrarCancelacion(idComanda, "np");
-                Iterator itrax = resax.iterator();
-                while (itrax.hasNext()) {
-                    Comandaventabean a = (Comandaventabean) itrax.next();
-                    resultado.append(a.getProducto() + " " + a.getMedida() + " ----> " + a.getCantidad() + " pz\n");
-
-
-
-                }
+//                List resax = dac.getMostrarCancelacion(idComanda, "np");
+//                Iterator itrax = resax.iterator();
+//                while (itrax.hasNext()) {
+//                    Comandaventabean a = (Comandaventabean) itrax.next();
+//                    resultado.append(a.getProducto() + " " + a.getMedida() + " ----> " + a.getCantidad() + " pz\n");
+//
+//
+//
+//                }
                 String tiket = daox.ImprimirComandaCancelad(mesero, em.getEmpleadocol(), idMesa, idComanda, fechaAc, horaAc, "", e.getNombre() + " " + e.getApellidos(), observa, resultado.toString());
 
                 out.println(tiket);

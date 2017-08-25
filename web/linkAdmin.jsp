@@ -188,9 +188,11 @@
                     </td>
                     <td>
                         <h5>Estadística</h5>
-                    </td><td> <a href="ReporteHoraVenta" target="_blank" class="thumbnail">
+                    </td>
+<!--                    <td> <a href="ReporteHoraVenta" target="_blank" class="thumbnail">
                             <img data-src="holder.js/300x200" src="images/estadistica.png" class="img" alt="">
-                        </a></td><td>
+                        </a></td>-->
+                        <td>
                         <a href="ReporteVentaMesas" target="_blank" class="thumbnail">
                             <img data-src="holder.js/300x200" src="images/cuentas.jpg" class="img" alt="">
                         </a>

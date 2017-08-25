@@ -95,8 +95,8 @@ public class EmpleadoDaoImpl implements EmpleadoDao {
 
         int total = 0;
         try {
-
-            String sql = "select u from Empleado u where idpuesto!=5 and idpuesto!=1 and idpuesto!=12 and idpuesto!=23 and CONCAT(Empleadocol,'',pass)=:pass";
+// Gerente y sistemas pueden cancelar
+            String sql = "select u from Empleado u where idpuesto in(2,22)and CONCAT(Empleadocol,'',pass)=:pass";
 
             //String sql = "SELECT count(*)  FROM Empleado  where  CONCAT(Empleadocol,'',pass) like '%EL1LALO%'";
             Query query = session.createQuery(sql);

@@ -108,7 +108,8 @@ public class AdicionalesComprobarDaoImpl implements AdicionalesComprobarDao {
                     + "WHERE "
                     + "    p.idProducto = a.idProducto "
                     + "        AND a.idVenta_Comandacol = " + idventa + " "
-                    + "GROUP BY a.idProducto";
+                    + "GROUP BY a.idProducto,a.idAdicionales";
+          //  System.out.println("SQL Adicionales>>>>"+sSQl);
 
             st = cn.prepareStatement(sSQl);
             rs = st.executeQuery();

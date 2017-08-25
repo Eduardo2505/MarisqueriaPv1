@@ -18,7 +18,7 @@ public class conexion {
     
     public String db = "marisqueriapv";
    
-    public String url = "jdbc:mysql://104.154.213.93:3306/" + db;
+    public String url = "jdbc:mysql://localhost:3306/" + db;
     public String user = "root";
     public String pass = "seiter";
 

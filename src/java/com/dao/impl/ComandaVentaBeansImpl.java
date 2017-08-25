@@ -167,7 +167,7 @@ public class ComandaVentaBeansImpl implements ComandaVentaBeans {
                         + "ORDER BY vc.registro DESC";
 
             }
-            // System.out.println(sSQl);
+             System.out.println("Tiket CANCELACION >>>>>>>>>"+sSQl);
             st = cn.prepareStatement(sSQl);
             rs = st.executeQuery();
 

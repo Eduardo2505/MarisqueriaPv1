@@ -384,7 +384,11 @@
                                     while (itra.hasNext()) {
                                         Comandaventabean a = (Comandaventabean) itra.next();
                                         sumita += a.getTotalcosto();
-                                        out.println("<tr><td colspan='2'><a href=\"#\" class=\"eliminarProducto\"  name=\"EliminarProductoController?idIdventComanda=" + a.getIdventa() + "\"> <img src=\"img/iconoE.png\"> </a> " + a.getProducto() + " " + a.getMedida() + "</td><td>" + a.getCantidad() + "</td><td>$ " + df.format(a.getTotalcosto()) + "</td><td><input type=\"radio\" class='addAdicionales' name=\"" + a.getIdProducto() + "\" value='" + a.getIdventa() + "'></td></tr>");
+                                        out.println("<tr><td colspan='2'><a href=\"#\" class=\"eliminarProducto\"  "
+                                                + "name=\"EliminarProductoController?idIdventComanda=" + a.getIdventa() + "\"> "
+                                                + "<img src=\"img/iconoE.png\"> </a> " + a.getProducto() + " " + a.getMedida() + "</td>"
+                                                + "<td>" + a.getCantidad() + "</td><td>$ " + df.format(a.getTotalcosto()) + "</td>"
+                                                + "<td><input type=\"radio\" class='addAdicionales' name=\"" + a.getIdProducto() + "\" value='" + a.getIdventa() + "'></td></tr>");
 
                                         AdicionalesComprobarDaoImpl daoEm = new AdicionalesComprobarDaoImpl();
                                         List res = daoEm.getAdicionales(a.getIdventa());
@@ -644,8 +648,8 @@
                             <%   } else {
 
                                 if (idpuesto == 12 || idpuesto == 8 || idpuesto == 22 || idpuesto == 23 || idpuesto == 2 || idpuesto == 3) {%>
-                        <input type="submit" value="CERRAR E IMPRIMIR" class="btn btn-primary numH">
-                        <a href="CancelaProducto.jsp" class="btn btn-warning" style="height:40px">Cancelar Producto</a>
+<!--                        <input type="submit" value="CERRAR E IMPRIMIR" class="btn btn-primary numH">
+                        <a href="CancelaProducto.jsp" class="btn btn-warning" style="height:40px">Cancelar Producto</a>-->
                         <!--<a href="#" id="reimprmir" name="idMesaCuenta=<% out.println(idMesa);%>&op=imprimir&idComanda=VER" class="btn btn-warning numI">VISTA PREVIA</a>-->
                         <%                            }
                             }%>
