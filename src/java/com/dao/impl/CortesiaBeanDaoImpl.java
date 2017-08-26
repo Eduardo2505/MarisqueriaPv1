@@ -50,7 +50,7 @@ public class CortesiaBeanDaoImpl implements CortesiaBeanDao {
                     + "		AND c.estado ='Activo' "
                     + "        AND mv.estado!='Cancelado' "
                     + "        AND mv.idEmpleado = e.idEmpleado and c.tipo='cortesia' "
-                    + "GROUP BY vc.idProducto , c.observa";
+                    + "GROUP BY vc.idProducto , c.observa,vc.idVenta_Comandacol";
 
             st = cn.prepareStatement(sSQl);
             rs = st.executeQuery();

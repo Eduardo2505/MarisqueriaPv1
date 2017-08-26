@@ -163,11 +163,11 @@ public class ComandaVentaBeansImpl implements ComandaVentaBeans {
                         + "        AND vc.idProducto = p.idProducto "
                         + "        AND c.estado = 'Cancelado' "
                         + "        AND c.idComanda LIKE '%" + idComanda + "%' and p.opcion!='adicional' "
-                        + "GROUP BY vc.idProducto , vc.idDescuento , c.observa "
+                        + "GROUP BY vc.idProducto , vc.idDescuento , c.observa,vc.idVenta_Comandacol "
                         + "ORDER BY vc.registro DESC";
 
             }
-             System.out.println("Tiket CANCELACION >>>>>>>>>"+sSQl);
+            System.out.println("Tiket CANCELACION >>>>>>>>>" + sSQl);
             st = cn.prepareStatement(sSQl);
             rs = st.executeQuery();
 
@@ -209,29 +209,26 @@ public class ComandaVentaBeansImpl implements ComandaVentaBeans {
         try {
 
             sSQl = "SELECT  "
-                    + "    c.idComanda, "
+                    + "   DISTINCT c.idComanda, "
                     + "    em.Nombre, "
                     + "    em.apellidos, "
                     + "    cc.descripcion, "
                     + "    cc.Registro, "
                     + "    cc.Autorizacion "
                     + "FROM "
-                    + "    mesa_venta mv, "
-                    + "    comanda c, "
-                    + "    venta_comanda vc, "
-                    + "    empleado em, "
-                    + "    cancelacion_comanda cc "
+                    + "    comanda c "
+                    + "        INNER JOIN "
+                    + "    mesa_venta mv ON mv.idMesa_venta = c.idMesa_venta "
+                    + "        INNER JOIN "
+                    + "    empleado em ON mv.idEmpleado = em.idEmpleado "
+                    + "        INNER JOIN "
+                    + "    cancelacion_comanda cc ON cc.idComanda = c.idComanda "
                     + "WHERE "
-                    + "    mv.idMesa_venta = c.idMesa_venta "
-                    + "        AND em.idEmpleado = mv.idEmpleado "
-                    + "        AND cc.idComanda = c.idComanda "
-                    + "        AND c.idComanda = vc.idComanda    "
-                    + "        AND c.estado = 'Cancelado' "
-                    + "        AND c.idaltadia = " + idDia + " "
-                    + "GROUP BY c.idComanda "
-                    + "ORDER BY vc.registro DESC";
+                    + "    c.estado = 'Cancelado' "
+                    + "        AND c.idaltadia = "+idDia+" "
+                    + "ORDER BY CC.registro DESC";
 
-            //System.out.println(sSQl);
+            System.out.println(sSQl);
             st = cn.prepareStatement(sSQl);
             rs = st.executeQuery();
 
